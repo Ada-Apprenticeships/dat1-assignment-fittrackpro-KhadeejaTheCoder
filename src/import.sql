@@ -1,1 +1,0 @@
-.read data/sample_data.sql

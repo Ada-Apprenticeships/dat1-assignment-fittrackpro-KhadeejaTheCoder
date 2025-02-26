@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const fs = require('fs');
 const path = require('path');
 
-const dbFile = path.join(__dirname, '../fittrackpro.sqlite');
+const dbFile = path.join(__dirname, '../src/fittrackpro.sqlite');
 const sqlFile = path.join(__dirname, 'sample_data.sql');
 
 // Check if the database file exists

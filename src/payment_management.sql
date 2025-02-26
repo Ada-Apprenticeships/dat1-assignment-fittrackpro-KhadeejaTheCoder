@@ -17,7 +17,7 @@ SELECT
     strftime('%Y-%m', payment_date) AS month,
     SUM(amount) AS total_revenue
 FROM payments
-WHERE payment_date >= date('now', '-12 months')  -- Only last 12 months
+WHERE payment_date >= date('now', '-12 months')
 AND payment_type = 'Monthly membership fee'
 GROUP BY strftime('%Y-%m', payment_date)
 ORDER BY month;
