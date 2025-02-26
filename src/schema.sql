@@ -1,6 +1,6 @@
 -- FitTrack Pro Database Schema
 -- Initial SQLite setup
-.open fittrackpro.sqlite
+.open src/fittrackpro.sqlite
 .mode column
 
 -- Enable foreign key support

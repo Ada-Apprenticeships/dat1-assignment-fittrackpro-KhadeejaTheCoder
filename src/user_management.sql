@@ -14,8 +14,8 @@ From members;
 -- 2. Update a member's contact information
 -- TODO: Write a query to update a member's contact information
 UPDATE members
-SET phone_number = '555-9876', email = 'emily.jones.updated@email.com'
-WHERE member_id = 5;
+SET phone_number = '236-4589', email = 'updatedemail@email.com'
+WHERE member_id = 4;
 
 -- 3. Count total number of members
 -- TODO: Write a query to count the total number of members
@@ -46,6 +46,6 @@ LIMIT 1;
 -- TODO: Write a query to calculate the percentage of members who have attended at least one class
 
 SELECT 
-    ROUND((COUNT(DISTINCT member_id) * 100.0 / (SELECT COUNT(*) FROM members)), 2) || '%' AS attendance_percentage  --Rounds to 2 DP
+    ROUND((COUNT(DISTINCT member_id) * 100.0 / (SELECT COUNT(*) FROM members)), 2) || '%' AS attendance_percentage
 FROM class_attendance
 WHERE attendance_status = 'Attended';
