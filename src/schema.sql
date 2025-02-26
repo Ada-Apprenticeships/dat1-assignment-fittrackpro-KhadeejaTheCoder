@@ -1,5 +1,4 @@
 -- FitTrack Pro Database Schema
-
 -- Initial SQLite setup
 .open fittrackpro.sqlite
 .mode column
